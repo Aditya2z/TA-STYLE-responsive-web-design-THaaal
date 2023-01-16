@@ -1,0 +1,131 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-desktop-view.png)
+
+#### Small Screen view(Below 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-mob-view.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Pay attention to the codes, your code quality matters a lot.
+
+- Try to implement the layout as exactly as it has been provided in the design.
+
+- Pay attention to minor things like spacing, alignment, size, etc.
+
+- Use any font-family which suits better for the assignment.
+
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Responsive-1</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+    <!-- Font-Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/eec6d21a06.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header flex justify-between align-center padding-5">
+        <figure class="brand">
+            <img src="./assets/media/logo.png" alt="brand logo">
+        </figure>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-menu-item ">
+                    <a href="#" >home</a>
+                </li>
+                <li class="nav-menu-item nav-menu-item-active">
+                    <a href="#">blog</a>
+                </li>
+                <li class="nav-menu-item ">
+                    <a href="#">about</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Hero -->
+        <section class="hero padding-3 flex justify-between row-reverse padding-5">
+            <figure class="flex-48">
+                <img src="./assets/media/01.png" alt="pic">
+            </figure>
+            <article class="flex-48">
+                <strong>What is Lorem Ipsum?</strong>
+                <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <button class="btn">
+                    read more
+                </button>
+            </article>
+        </section>
+        <!-- Blog -->
+        <section class="blog padding-3 padding-5">
+            <h1>Our Blog</h1>
+            <div class="article-container flex justify-between">
+                <article class="flex-31">
+                    <figure>
+                        <img src="./assets/media/02.png">
+                    </figure>
+                    <h2>Why do we use it?</h2>
+                    <p class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+                    <button class="btn">
+                        read more
+                    </button>
+                </article>
+                <article class="flex-31">
+                    <figure>
+                        <img src="./assets/media/03.png">
+                    </figure>
+                    <h2>Why do we use it?</h2>
+                    <p class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+                    <button class="btn">
+                        read more
+                    </button>
+                </article>
+                <article class="flex-31">
+                    <figure>
+                        <img src="./assets/media/04.png">
+                    </figure>
+                    <h2>Why do we use it?</h2>
+                    <p class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+                    <button class="btn">
+                        read more
+                    </button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer padding-3 flex justify-between padding-5 align-center">
+        <small>&copy; AltCampus</small>
+        <div>
+            <a href="htttps://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="htttps://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-square-twitter"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
