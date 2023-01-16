@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Styling Starts Here */
+/* Mobile First Approach */
+
+/* My Resets */
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+    max-width: 1370px;
+    width: 100%;
+    line-height: 1.5;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+button,
+input {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+}
+img,
+audio,
+video {
+    width: 100%;
+}
+
+/* Variables */
+:root {
+    --primary-bg:#222946;
+    --secondary-bg:#37B667;
+    --tertiary-bg:#e1e3f1;
+    --text-dark:#020511;
+    --text-light:#88898C;
+}
+
+/* Headings */
+h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+/* Text */
+.text {
+    color: var(--text-light);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -.5px;
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--secondary-bg);
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+}
+
+/* Width */
+.width-full {
+    width: 100%;
+}
+
+/* Padding */
+.padding-3 {
+    padding: 3rem;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--primary-bg);
+    padding: 3rem;
+    text-align: center;
+}
+.brand {
+    display: inline-block;
+    width: 15rem;
+}
+.nav-menu {
+    text-align: center;
+    margin-top: 3rem;
+}
+.nav-menu-item{
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+.nav-menu-item a {
+    color: white;
+}
+.nav-menu-item-active a{
+    color: var(--secondary-bg);
+}
+
+/* Main Styles */
+/* Hero Section */
+.hero {
+    background-color: var(--tertiary-bg);
+}
+.hero strong{
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+.hero .btn {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 4rem;
+    padding-right: 6rem;
+}
+/* Blog Section */
+.blog .btn {
+    margin: 3rem 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--primary-bg);
+    font-weight: 500;
+    color: var(--tertiary-bg);
+    text-align: center;
+}
+.footer small {
+    display: block;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+.footer .fa-brands {
+    color: var(--tertiary-bg);
+    margin: 0 2rem;
+    font-size: 2.5rem;
+}
+
+@media screen and (min-width:770px) {
+
+/* Desktop Styles */
+/* My reset */
+html {
+    font-size: 10px;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.align-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.flex-grow {
+    flex: 1 1 auto;
+}
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-48 {
+    flex: 0 1 48%;
+}
+.flex-31 {
+    flex: 0 1 31%;
+}
+
+/* Padding */
+.padding-5 {
+    padding: 1rem 5rem;
+}
+.padding-5tb {
+    padding: 5rem;
+}
+
+/* Header Styles */
+.nav-menu {
+    margin: 0;
+}
+
+/* Main Styles */
+.hero .btn {
+    padding: 1.5rem 2rem;
+}
+.article-container img {
+    height: 240px;
+}
+
+/* Headings */
+h1 {
+    margin: 2rem;
+}
+}
