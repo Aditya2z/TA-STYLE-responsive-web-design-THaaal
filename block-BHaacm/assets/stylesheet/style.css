@@ -247,6 +247,9 @@ html {
 .padding-5 {
     padding: 1rem 5rem;
 }
+.padding-5tb {
+    padding: 5rem;
+}
 
 /* Header Styles */
 .nav-menu {
