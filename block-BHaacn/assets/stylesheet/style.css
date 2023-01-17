@@ -1,0 +1,454 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Styles Start Here */
+/* DESKTOP FIRST APPROACH */
+
+/* My Resets */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/* General Styles */
+html {
+    font-size: 16px;
+}
+body {
+    max-width: 1380px;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: -1.5px;
+    line-height: 1.5;
+}
+button,
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+img,
+audio,
+video {
+    width: 100%;
+}
+
+/* Variables */
+:root {
+    --primary-bg:#3524AD;
+    --secondary-bg:#F9234D;
+    --tertiary-bg:#DFECFF;
+    --text-dark :#01122D;
+    --text-light:#6A6970;
+    --text-footer:#9b9fb1;
+    --text-white: #FFFFFF;
+    --footer-bg-1:#23347B;
+    --footer-bg-2: #102169;
+}
+
+/* Containers */
+.container-90 {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Width */
+.full-width {
+    max-width: 1380px;
+    width: 100%;
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--secondary-bg);
+    padding: .75rem 2rem;
+    text-transform: capitalize;
+    border-radius: .25rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-white);
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.grow {
+    flex: 1 1 auto;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.flex-15 {
+    flex: 0 1 15%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-25 {
+    flex: 0 1 25%;
+}
+.flex-31 {
+    flex: 0 1 31%;
+}
+.flex-40 {
+    flex: 0 1 40%;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+.flex-60 {
+    flex: 0 1 60%;
+}
+
+/* Padding */
+.padding-3 {
+    padding: 3rem 0;
+}
+
+/* Headings */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 2rem 0;
+    width: 80%;
+    color: var(--text-white);
+}
+h2,h3,h4,h5,h6 {
+    color: var(--text-dark);
+}
+h2{
+    font-size: 2.75rem;
+    font-weight: 800;
+    letter-spacing: -3px;
+}
+h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+h5 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+h6 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+/* Text */
+.uppercase {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.text-accent {
+    color: var(--secondary-bg);
+}
+.text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 1.5rem 0;
+}
+
+
+/* Header Styles */
+.header {
+    padding: 1.5rem 0;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header strong {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-white);
+}
+.nav-menu-item {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 2rem;
+    color: var(--text-white);
+}
+.nav-menu .btn {
+    padding: .5rem 2rem;
+}
+
+/* Main Styles */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(53,39,179,.8), rgba(53,39,179,.8)),
+     url(../media/banner.png)  ;
+    padding: 8rem 0 3rem 0;
+}
+.hero .text {
+    color: var(--text-white);
+}
+/* About Section */
+.about .text {
+    color: var(--text-light);
+    font-weight: 600;
+}
+/* Join */
+.join {
+    background-color: var(--tertiary-bg);
+}
+.join .flex {
+    margin-top: 5rem;
+}
+.join h3 {
+    text-align: center;
+}
+.join article {
+    border: 2px dashed var(--secondary-bg);
+    padding:  1.5rem .5rem .75rem .5rem;
+    position: relative;
+}
+.join article .text-accent {
+    font-size: 2rem;
+    font-weight: 800;
+    position: absolute;
+    top: -1.5rem;
+    left: 1rem;
+    background-color: var(--tertiary-bg);
+    padding: 0 0.5rem;
+}
+.join article p {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+/* Schedule Section */
+.schedule {
+    text-align: center;
+}
+.schedule h3 {
+    margin-bottom: 5rem;
+}
+.schedule article {
+    margin-bottom: 4rem;
+    text-align: left;
+}
+.schedule .circle {
+    position: relative;
+}
+.schedule .circle time {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    border: 2px dashed var(--secondary-bg);
+}
+.vertical-border {
+    border-right: 2px dashed var(--secondary-bg);
+    height: 4rem;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+}
+.active {
+    background-color: var(--secondary-bg);
+    color: var(--text-white);
+}
+.active * {
+    color: white;
+}
+.schedule img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.schedule .text {
+    margin: 1rem 0 0 0;
+    color: var(--text-light);
+}
+/* Sketch Section */
+.sketch {
+    text-align: center;
+    background-color: var(--tertiary-bg);
+    color: var(--text-dark);
+}
+.sketch article {
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.sketch img {
+    width: 75px;
+    object-fit: cover;
+}
+.sketch h4 {
+    margin: 1rem 0;
+}
+.sketch p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+/* Video Section*/
+.video figure {
+    position: relative;
+}
+.video img {
+    border-radius: 1rem;
+}
+.video .play {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--text-white);
+    color: var(--secondary-bg);
+    border-radius: 50%;
+    font-size: 3rem;
+}
+/* News Section */
+.news {
+    background-color: var(--tertiary-bg);
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.news h3 {
+    margin-bottom: 2rem;
+}
+.news article {
+    text-align: left;
+}
+.news article h5 {
+    margin: 0.5rem 0;
+}
+.news article p {
+    color: var(--text-light);
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin: 0.5rem 0;
+}
+.news article .read {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--text-dark);
+    display: inline-block;
+    margin: 1rem 0;
+}
+.news article .text-accent {
+    color: var(--secondary-bg);
+}
+
+/* Footer Styles */
+/* Footer-1 */
+footer a {
+    color: var(--text-footer);
+    margin-right: 1.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+.footer-1 {
+    background-color: var(--footer-bg-1);
+}
+.footer-1 img{
+    width: 30%;
+}
+footer h6 {
+    color: var(--text-white);
+    margin-bottom: 1rem;
+}
+.footer-2 {
+    text-align: center;
+}
+footer small {
+    color: var(--text-footer);
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+footer .fa-brands {
+    font-size: 1.75rem;
+}
+.footer-2 {
+    background-color: var(--footer-bg-2);
+    padding: 2rem;
+}
