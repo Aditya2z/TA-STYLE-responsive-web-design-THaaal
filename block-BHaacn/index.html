@@ -1,0 +1,323 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Responsive-2</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+    <!-- Font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/eec6d21a06.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header full-width">
+        <div class="container-90 flex justify-between align-center">
+            <strong class="brand-name">Alt Events</strong>
+            <nav class="nav-menu">
+                <ul class="flex">
+                    <li class="uppercase">
+                        <a href="#" class="nav-menu-item">home</a>
+                    </li>
+                    <li class="uppercase">
+                        <a href="#" class="nav-menu-item">about</a>
+                    </li>
+                    <li class="uppercase">
+                        <a href="#" class="nav-menu-item">services</a>
+                    </li>
+                    <li class="uppercase">
+                        <a href="#" class="nav-menu-item">contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn nav-menu-item">join us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container-90 flex justify-between align-center">
+                <article class="flex-50">
+                    <h1>web developer conference <span class="text-accent">2020</span> </h1>
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia provident ut sed quam totam. Et pariatur, laborum mollitia iure saepe magnam fugit tempora, at, cupiditate corrupti nemo fuga. Quaerat, quae!</p>
+                    <button class="btn">Register Now</button>
+                </article>
+                <figure class="flex-30">
+                    <img src="./assets/media/hero.png" alt="Girl Performing On Mic">
+                </figure>
+            </div>
+        </section>
+        <!-- About -->
+        <section class="about">
+            <div class="container-90 flex justify-between align-center padding-3">
+                <figure class="flex-40">
+                    <img src="./assets/media/about.png" alt="Confrence">
+                </figure>
+                <article class="flex-50">
+                    <h2 class="uppercase">about the event</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequatur, harum hic perspiciatis labore magnam facere exercitationem deserunt voluptas sapiente voluptatibus iusto est eveniet quia distinctio omnis temporibus! Adipisci, quos!
+                    </p>
+                    <button class="btn">know more</button>
+                </article>
+            </div>
+        </section>
+        <!-- Join -->
+        <section class="join padding-3">
+            <div class="container-90">
+                <h3 class="capitalize">why you should join</h3>
+            <div class="flex justify-between">
+                <article class="flex-31">
+                    <span class="text-accent">1</span>
+                    <h5 class="capitalize">Network</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ducimus veritatis ea asperiores illum sint quaerat voluptas, corporis vero hic rerum dicta suscipit quas vitae magnam atque quo ?</p>
+                </article>
+                <article class="flex-31">
+                    <span class="text-accent">2</span>
+                    <h5 class="capitalize">great speakers</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ducimus veritatis ea asperiores illum sint quaerat voluptas, corporis vero hic rerum dicta suscipit quas vitae magnam atque quo ?</p>
+                </article>
+                <article class="flex-31">
+                    <span class="text-accent">3</span>
+                    <h5 class="capitalize">information</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ducimus veritatis ea asperiores illum sint quaerat voluptas, corporis vero hic rerum dicta suscipit quas vitae magnam atque quo ?</p>
+                </article>
+            </div>
+            </div>
+        </section>
+        <!-- Schedule -->
+        <section class="schedule padding-3">
+            <div class="container-90">
+                <h3>Schedule</h3>
+                <div>
+                    <article class="flex justify-between">
+                        <div class="flex-15 circle flex align-center justify-center">
+                            <time class="flex align-center justify-center text-accent active">
+                                06<br>
+                                Sept
+                            </time>
+                            <div class="vertical-border"></div>
+                        </div>
+                        <figure class="flex-15">
+                            <img src="./assets/media/schedule-01.jpg">
+                        </figure>
+                        <div class="flex-60">
+                            <h4 class="capitalize">digital world event conversation</h4>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt ducimus sint unde sunt consectetur, sit eius, minus porro illum !</p>
+                        </div>
+                    </article>
+                    <article class="flex justify-between">
+                        <div class="flex-15 circle flex align-center justify-center">
+                            <time class="flex align-center justify-center text-accent">
+                                07<br>
+                                Sept
+                            </time>
+                            <div class="vertical-border"></div>
+                        </div>
+                        <figure class="flex-15">
+                            <img src="./assets/media/schedule-02.jpg">
+                        </figure>
+                        <div class="flex-60">
+                            <h4 class="capitalize">web designing conversation</h4>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt ducimus sint unde sunt consectetur, sit eius, minus porro illum !</p>
+                        </div>
+                    </article> 
+                    <article class="flex justify-between">
+                        <div class="flex-15 circle flex align-center justify-center">
+                            <time class="flex align-center justify-center text-accent">
+                                08<br>
+                                Sept
+                            </time>
+                            <div class="vertical-border"></div>
+                        </div>
+                        <figure class="flex-15">
+                            <img src="./assets/media/schedule-03.jpg">
+                        </figure>
+                        <div class="flex-60">
+                            <h4 class="capitalize">web development conversation</h4>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt ducimus sint unde sunt consectetur, sit eius, minus porro illum !</p>
+                        </div>
+                    </article>
+                    <article class="flex justify-between">
+                        <div class="flex-15 circle flex align-center justify-center">
+                            <time class="flex align-center justify-center text-accent">
+                                09<br>
+                                Sept
+                            </time>
+                        </div>
+                        <figure class="flex-15">
+                            <img src="./assets/media/schedule-04.jpg">
+                        </figure>
+                        <div class="flex-60">
+                            <h4 class="capitalize">digital marketting conference</h4>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt ducimus sint unde sunt consectetur, sit eius, minus porro illum !</p>
+                        </div>
+                    </article>
+                </div>
+                <button class="btn">download schedule</button>
+            </div>
+        </section>
+        <!-- Sketch -->
+        <section class="sketch padding-3">
+            <div class="container-90 flex justify-between">
+                <article class=" flex flex-column align-center grow">
+                    <figure>
+                        <img src="./assets/media/speaker.png">
+                        <h4>20+</h4>
+                        <p class="">Great Speakers</p>
+                    </figure>
+                </article>
+                <article class="flex flex-column align-center grow active">
+                    <figure>
+                        <img src="./assets/media/idea.png">
+                        <h4>50+</h4>
+                        <p class="">Total Topics</p>
+                    </figure>
+                </article>
+                <article class="flex flex-column align-center grow">
+                    <figure>
+                        <img src="./assets/media/participants.png">
+                        <h4>300+</h4>
+                        <p class="">Participants</p>
+                    </figure>
+                </article>
+                <article class="flex flex-column align-center grow">
+                    <figure>
+                        <img src="./assets/media/sponsor.png">
+                        <h4>20+</h4>
+                        <p class="">Sponsors</p>
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <!-- Video -->
+        <section class="video">
+            <div class="container-90 padding-3">
+                <figure>
+                    <div class="play flex center">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <img src="./assets/media/banner.png">
+                </figure>
+            </div>
+        </section>
+        <!-- News -->
+        <section class="news padding-3">
+            <div class="container-90">
+                <h3 class="capitalize">our latest news</h3>
+                <div class="flex justify-between">
+                    <article class="flex-31">
+                        <figure>
+                            <img src="./assets/media/news-01.png">
+                        </figure>
+                        <h6>How to build a great portfolio as a beginner developer</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, aut corrupti? Aliquam maiores cupiditate nesciunt facilis! Quibusdam expedita, velit laborum voluptatibus, quis ea voluptates beatae eveniet accusamus debitis quasi unde?</p>
+                        <a href="#" class="read">Read More</a>
+                    </article>
+                    <article class="flex-31">
+                        <figure>
+                            <img src="./assets/media/news-01.png">
+                        </figure>
+                        <h6>How to build a great portfolio as a beginner developer</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, aut corrupti? Aliquam maiores cupiditate nesciunt facilis! Quibusdam expedita, velit laborum voluptatibus, quis ea voluptates beatae eveniet accusamus debitis quasi unde?</p>
+                        <a href="#" class="read text-accent">Read More</a>
+                    </article>
+                    <article class="flex-31">
+                        <figure>
+                            <img src="./assets/media/news-01.png">
+                        </figure>
+                        <h6>How to build a great portfolio as a beginner developer</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, aut corrupti? Aliquam maiores cupiditate nesciunt facilis! Quibusdam expedita, velit laborum voluptatibus, quis ea voluptates beatae eveniet accusamus debitis quasi unde?</p>
+                        <a href="#" class="read">Read More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer-1 -->
+        <section class="footer-1 padding-3">
+            <div class="container-90 flex justify-between align-center">
+                <figure class="flex-31">
+                    <img src="./assets/media/footer-logo.png">
+                </figure>
+                <nav class="footer-nav-menu flex-31">
+                    <h6>Quick Links</h6>
+                    <ul class="flex">
+                        <li>
+                            <a href="#">Program</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav-menu flex-31">
+                    <h6>Follow Us</h6>
+                    <ul class="flex">
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com" target="_blank">
+                                <i class="fa-brands fa-square-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <!-- Footer-2 Copyright -->
+        <section class="footer-2">
+            <div class="container-90">
+                <small>&copy; AltCampus Services Pvt Ltd, 2018-Present.</small>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
+
+
