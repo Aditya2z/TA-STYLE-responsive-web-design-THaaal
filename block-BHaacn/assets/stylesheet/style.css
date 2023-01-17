@@ -545,7 +545,16 @@ footer .fa-brands {
     .schedule figure {
         flex: 0 1 35%;
     }
-
+    /* Sketch Section */
+    .sketch article {
+        margin-bottom: 2rem;
+    }
+    /* Video Section */
+    .video .play {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
     /* Footer */
     .footer-1 {
         text-align: center;
@@ -566,6 +575,17 @@ footer .fa-brands {
 }
 
 /* Media Queries For Different Screen Size */
+@media screen and (max-width:700px) {
+    html{
+        font-size: 8px;
+    }
+    .container-90 {
+        max-width: 70%;
+    }
+    .schedule figure, .schedule .flex-60 {
+        flex:  0 1 100%;
+    }
+}
 @media screen and (max-width:512px) {
     html{
         font-size: 8px;
