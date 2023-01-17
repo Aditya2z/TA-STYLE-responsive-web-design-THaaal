@@ -237,6 +237,9 @@ h6 {
     top: 0;
     left: 0;
 }
+.header label,input {
+    display: none;
+}
 .header strong {
     font-size: 2rem;
     font-weight: 800;
@@ -451,4 +454,179 @@ footer .fa-brands {
 .footer-2 {
     background-color: var(--footer-bg-2);
     padding: 2rem;
+}
+
+/* Writing Media Query For Mobile View */
+@media screen and (max-width:768px) {
+    /* General Styles */
+    html {
+        font-size: 10px;
+    }
+    body {
+        letter-spacing: 0;
+    }
+    .container-90 {
+        max-width: 80%;
+    }
+    /* Flex */
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .flex-100 {
+        flex: 0 1 100%;
+    }
+    /* Header Styles */
+    .header strong {
+        font-size: 3rem;
+        letter-spacing: 0;
+    }
+    /* Header Hamburger */
+    .header .nav-menu {
+        display: none;
+        background-color: var(--primary-bg);
+    }
+    .header label {
+        display: flex;
+        font-size: 1.6rem;
+        color: var(--text-white);
+    }
+    #hamburger:checked ~ .nav-menu{
+        display: flex;
+        position: absolute;
+        top: 7rem;
+        right: 0;
+    }
+    #hamburger:checked ~ .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    #hamburger:checked ~ .nav-menu a {
+        display: inline-block;
+        margin: 1rem;
+        padding: 0 5rem;
+        text-align: center;
+        letter-spacing: 0;
+        font-size: 1.6rem;
+    }
+
+    /* Main Styles */
+    /* Hero Section */
+    .hero figure {
+        max-width: 50%;
+        margin: 0 auto;
+        order: 1;
+    }
+    .hero article {
+        order: 2;
+        text-align: center;
+    }
+    .hero h1 {
+        margin: 1rem auto;
+    }
+    /* About Section */
+    .about figure {
+        max-width: 50%;
+        margin: 1rem auto;
+    }
+    .about article {
+        text-align: center;
+    }
+    /* Join Section */
+    .join article {
+        margin-bottom: 3rem;
+    }
+    /* Schedule Section */
+    .schedule .vertical-border{
+        display: none;
+    }
+    .schedule .circle {
+        margin-bottom: 2rem;
+    }
+    .schedule figure {
+        flex: 0 1 35%;
+    }
+
+    /* Footer */
+    .footer-1 {
+        text-align: center;
+    }
+    .footer-1 img {
+        width: 20%;
+        margin-bottom: 2rem;
+    }
+    .footer-1 nav {
+        margin-bottom: 2rem;
+    }
+    .footer-1 ul {
+        justify-content: center;
+    }
+    .footer-1 a {
+        margin: 1rem;
+    }
+}
+
+/* Media Queries For Different Screen Size */
+@media screen and (max-width:512px) {
+    html{
+        font-size: 8px;
+    }
+    .container-90 {
+        max-width: 70%;
+    }
+}
+@media screen and (max-width:912px) {
+    html{
+        font-size: 12px;
+    }
+    .container-90 {
+        max-width: 85%;
+    }
+}
+@media screen and (max-width:1320px) {
+    html{
+        font-size: 14px;
+    }
+    /* Footer */
+    .footer-1 {
+        text-align: center;
+    }
+    .footer-1 img {
+        width: 20%;
+        margin-bottom: 2rem;
+    }
+    .footer-1 nav {
+        margin-bottom: 2rem;
+    }
+    .footer-1 ul {
+        justify-content: center;
+    }
+    .footer-1 a {
+        margin: 1rem;
+    }
+    footer .wrap {
+        flex-wrap: wrap;
+    }
+    footer .flex-100 {
+        flex: 0 1 100%;
+    }
+}
+
+/* Hovering Effects */
+.btn:hover {
+    background-color: var(--text-white);
+    color: var(--secondary-bg);
+    border: 2px solid var(--secondary-bg);
+}
+a:hover {
+    color: var(--secondary-bg);
+}
+.news article .read:hover {
+    color: var(--secondary-bg);
+}
+.footer-1 .fa-brands:hover {
+    color: var(--secondary-bg);
+    background-color: var(--text-white);
+    padding: 0.25rem .5rem;
+    border-radius: 10%;
+    transition: all 300ms ease-in-out;
 }
